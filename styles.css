@@ -51,7 +51,9 @@ nav {
 nav a {
     color: white;
     text-decoration: none;
+    display: inline-block; /* Changed to inline-block */
     margin: 0 15px;
+    padding: 5px 10px; /* Added padding for better clickable area */
     font-size: 1.1em;
     transition: color 0.3s;
 }
@@ -167,10 +169,15 @@ footer {
         font-size: 0.9em;
     }
 
+    nav {
+        padding: 10px 0;
+    }
+
     nav a {
-        display: block;
+        display: block; /* Stack vertically on small screens */
         margin: 8px 0;
         font-size: 0.9em;
+        padding: 8px 0;
     }
 
     .container {
@@ -219,9 +226,15 @@ footer {
         font-size: 1em;
     }
 
+    nav {
+        padding: 10px 0;
+    }
+
     nav a {
-        margin: 10px 10px;
+        display: inline-block; /* Keep inline-block for tablets */
+        margin: 5px 10px;
         font-size: 1em;
+        padding: 5px 8px;
     }
 
     .container {
@@ -234,7 +247,7 @@ footer {
     }
 
     .sermon-grid {
-        grid-template-columns: 1fr; /* Single column for tablets */
+        grid-template-columns: 1fr;
     }
 
     button {
@@ -257,12 +270,14 @@ footer {
     }
 
     nav a {
+        display: inline-block; /* Inline-block for laptops */
         margin: 0 12px;
         font-size: 1em;
+        padding: 5px 10px;
     }
 
     .container {
-        max-width: 90%; /* Slightly narrower for laptop screens */
+        max-width: 90%;
         margin: 15px auto;
         padding: 20px;
     }
@@ -272,7 +287,7 @@ footer {
     }
 
     .sermon-grid {
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Adjusts for laptop width */
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     }
 
     button {
@@ -282,7 +297,6 @@ footer {
 
 /* Desktops (1201px and up) */
 @media (min-width: 1201px) {
-    /* Base styles already cover this range, so no major changes needed */
     header .logo {
         max-width: 100px;
     }
@@ -292,8 +306,10 @@ footer {
     }
 
     nav a {
+        display: inline-block; /* Inline-block for desktops */
         margin: 0 15px;
         font-size: 1.1em;
+        padding: 5px 10px;
     }
 
     .container {
