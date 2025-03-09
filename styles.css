@@ -51,9 +51,8 @@ nav {
 nav a {
     color: white;
     text-decoration: none;
-    display: inline-block; /* Changed to inline-block */
-    margin: 0 15px;
-    padding: 5px 10px; /* Added padding for better clickable area */
+    display: inline; /* Changed to inline */
+    margin: 0 15px; /* Margin works horizontally for inline elements */
     font-size: 1.1em;
     transition: color 0.3s;
 }
@@ -177,7 +176,6 @@ footer {
         display: block; /* Stack vertically on small screens */
         margin: 8px 0;
         font-size: 0.9em;
-        padding: 8px 0;
     }
 
     .container {
@@ -231,10 +229,9 @@ footer {
     }
 
     nav a {
-        display: inline-block; /* Keep inline-block for tablets */
-        margin: 5px 10px;
+        display: inline; /* Keep inline for tablets */
+        margin: 0 10px;
         font-size: 1em;
-        padding: 5px 8px;
     }
 
     .container {
@@ -270,10 +267,9 @@ footer {
     }
 
     nav a {
-        display: inline-block; /* Inline-block for laptops */
+        display: inline; /* Inline for laptops */
         margin: 0 12px;
         font-size: 1em;
-        padding: 5px 10px;
     }
 
     .container {
@@ -306,10 +302,9 @@ footer {
     }
 
     nav a {
-        display: inline-block; /* Inline-block for desktops */
+        display: inline; /* Inline for desktops */
         margin: 0 15px;
         font-size: 1.1em;
-        padding: 5px 10px;
     }
 
     .container {
